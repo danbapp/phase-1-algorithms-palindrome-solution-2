@@ -1,6 +1,14 @@
 function isPalindrome(word) {
   // Write your algorithm here
-}
+  // iterate over word, each character to the middle, using slice for each character
+    for (let i = 0; i < word.length / 2; i++){
+    const j = word.length -1 -i;
+    let startChar = word[i];
+    let endChar = word[j];
+    if(startChar !== endChar) return false;
+    }
+    return true;
+  }
 
 /* 
   Add your pseudocode here
